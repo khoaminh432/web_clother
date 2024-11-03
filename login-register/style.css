@@ -1,19 +1,21 @@
+/*set up tất cả*/
 *{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
+/*thêm ảnh background đặt form ở trung tâm*/
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
     background: url(clothes.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
 }
+/* nút để bật tab login/register có thể thay đổi*/
 .but-user{
     position: absolute;
     border: 3px solid red;
@@ -25,6 +27,7 @@ body{
 .but-user:hover{
     background: #28ebe1;
 }
+/* đặt thông tin vào trung tâm của form */
 .form-user{
     color:rgb(253, 237, 12);
     position: relative;
@@ -42,28 +45,35 @@ body{
     transition: transform .5s ease,height .5s ease;
     overflow: hidden;
 }
+/* tạo chiều cao mới khi bấm vào register */
 .form-user.active{
     height: 520px;
 }
+/* dịch chuyển form login về trái */
 .form-user.active .form-login{
     transition: none;
     transform: translateX(-400px);
 }
+/* căn chỉnh các thông tin của register phù hợp với form */
 .form-register{
     width: 350px;
 }
+/* dịch chuyển form register sang bên phải */
 .form-user .form-register{
     position: absolute;
     transition: none;
     transform: translateX(400px);
 }
+/* chuyển về vị trí trung tâm khi bấm vào register */
 .form-user.active .form-register{
     transition: transform .18s ease;
     transform: translateX(0);
 }
+/* làm xuất hiện form login/register */
 .form-user.active-popup{
     transform: scale(1);
 }
+
 .form-user .form-login{
     width: 100%;
     padding: 40px;
