@@ -73,20 +73,17 @@ body{
 .form-user.active-popup{
     transform: scale(1);
 }
-
+/* căn chỉnh thông tin trong login*/
 .form-user .form-login{
     width: 100%;
     padding: 40px;
 }
-
-.form-user .form-register{
-    position: absolute;
-    transform: translateX(400px);
-}
+/* độ rộng chữ */
 h1{
     font-size: 2em;
     text-align: center;
 }
+/* setup phần nhập thông tin */
 .input-box{
     position:relative;
     width: 100%;
@@ -94,6 +91,7 @@ h1{
     border-bottom: 3px solid rgb(247, 247, 247);
     margin: 30px 0;
 }       
+/* tạo hiệu ứng dịch chuyển lên của lable */
 .input-box label{
     position: absolute;
     top: 30%;
@@ -104,10 +102,12 @@ h1{
     pointer-events: none;
     transition: .5s ;
 }
+/* dịch chuyển label lên */
 .input-box input:focus~label,
 .input-box input:valid~label{
         top: -7px;
 }
+/* làm đồng bộ input với background */
 .input-box input{
     color: aliceblue;
     width: 100%;
@@ -119,12 +119,14 @@ h1{
     font-weight: 500;
     padding: 0 35px 0 5px;
 }
+/* đặt icon tại vị trí */
 .input-box .icon{
     position: absolute;
     right: 8px;
     font-size: 1.3em;
     top: 12px;
 }
+/* đẩy remember me sang cuối */
 .remember-forgot{
     font-weight: 500;
     margin: -15px 0 15px;
@@ -143,6 +145,7 @@ a{
 a:hover{
     text-decoration: underline;
 }
+/* trang trí nút bấm */
 .btn{
     width:100% ;    height: 45px;
     background: rgb(64, 14, 193);
@@ -154,12 +157,15 @@ a:hover{
     border-radius: 10px;
     cursor: pointer;
 }
+
 .login-register{
+    width: 100%;
     font-size: 1.1em;
     margin-top: 5px;
     text-align: center;
     font-weight: 500;
 }
+/* trang trí nut bấm close */
 .form-user .icon-close{
     position: absolute;
     top: 0;
@@ -177,10 +183,11 @@ a:hover{
     border-top-right-radius: 20px;
     color: rgb(255, 240, 240);
 }
-
+/* sửa lỗi label cách nhau không đều */
 #lab-email{
     margin-left: -18px;
 }
+/* cấu hình thông báo lỗi */
 #emailError{
     
     color: red;
